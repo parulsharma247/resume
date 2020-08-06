@@ -56,8 +56,14 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 
+        <div id="top" style="height: 1px">
+            <a href="#profile" class="scroll-down">
+            </a>
+        </div>
+
+       
 <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top" role="navigation">
 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -72,12 +78,14 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <a href="#profile">Home</a>
-        <a href="#experiences">Experience</a>
-        <a href="#abilities">Abilities</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-	<a href='https://in.linkedin.com/in/parulsharma247'>LinkedIn</a>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#profile">Home</a></li>
+            <li><a href="#experiences">Experience</a></li>
+            <li><a href="#abilities">Abilities</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href='https://in.linkedin.com/in/parulsharma247'>LinkedIn</a></li>
+        </ul>
     </div>
 
 </nav>
@@ -93,14 +101,14 @@
         <hr/>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12 col-xs-12">
                 <h3>About me</h3>
                 <p >
                     I am an aspiring Data Scientist with good knowledge of Statistical Modelling, Machine Learning and Deep Learning algorithms. I love spending time on fixing little details and optimizing the result by performing EDA, Feature Engineering, Feature Selection, Hyperparameter Tunning and various other techniques.
                 </p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 col-sm-6 col-xs-12 text-center">
                 <img src="images/parul_1.png" alt="Parul Sharma" width="150" height="150" 
                 style=" border-top-right-radius: 50%;
                 border-top-left-radius: 50%;
@@ -109,7 +117,7 @@
                 border: 7px solid #C0C0C0;"/>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <h3>Details</h3>
                 <p>
                     <strong>Name:</strong><br/>
@@ -145,7 +153,7 @@
 </div>
 
 <div id="experiences" class="container">
-    <h2>Experiences</h2>
+    <h2 style="margin-top: 40px;">Experiences</h2>
     <p class="lead">
         <visibility: hidden> &ldquo;Protons give an atom its identity, electrons its personality.&rdquo;<br/>- Bill
             Bryson, A short history of nearly everything
@@ -242,7 +250,7 @@
  
  <hr/>
 
-     <div class="text-center project-referal" style="margin-bottom: 15px;">
+     <div class="text-center project-referal" style="margin-bottom: 20px;">
         <p style="font-weight: 550"> Click here to download my Resume </p>
         <a href="https://github.com/parulsharma247/resume_1_1/raw/master/Resume_Parul_Sharma.docx" class="btn btn-primary" target="_blank">Click Here</a>
    	 </div>
@@ -257,7 +265,7 @@
 
 <div class="background-white">
     <div id="abilities" class="container" style="font-weight: 500">
-        <h2>Abilities</h2>
+        <h2 style="margin-top: 40px;">Abilities</h2>
         <p class="lead">
             &ldquo;Life without knowledge is death in disguise.&rdquo;<br/>- Talib Kweli
         </p>
@@ -800,7 +808,7 @@
 
 
 <div id="projects" class="container">
-    <h2>Projects</h2>
+    <h2 style="margin-top: 40px;">Projects</h2>
     <p class="lead">
         &ldquo;You can do anything you set your mind to.&rdquo;<br/>- Benjamin Franklin
     </p>
@@ -828,7 +836,7 @@
                 <img src="images/projects/CNN_index.png" alt="Image classification CNN" style="height:300px;"/>
                 <figcaption>
                     <h3>Cat Dog Image Classification</h3>
-                    <p>Predict the heart disease probability of a person based on various features.</p>
+                    <p>Predict whether the image is an cat or an dog using CNN.</p>
                     <p><strong>Tags:</strong> <br/>Deep Learning, CNN, Flask, HTML</p>
                     <a href="https://github.com/parulsharma247?tab=repositories" target="_blank">View more</a>                   
                 </figcaption>
@@ -838,25 +846,25 @@
 
      <div class="row">
 
-     	<div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+     	<div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <figure class="effect">
-                <img src="images/projects/diabetes_prediction_github.png" alt="Diabetes Prediction" style="height:300px;"/>
+                <img src="images/projects/hand_detection_TFOD.png" alt="Object Detection Deep Learning" style="height:300px;"/>
                 <figcaption>
-                    <h3>Diabetes Prediction</h3>
-                    <p>Predict the diabetes proability of a person based on various features </p>
-                    <p><strong>Tags:</strong> <br/>Machine Learning,Clustering Algo, Classification Algo, Flask, HTML</p>
-                    <a href="https://github.com/parulsharma247/ML_diabetes_prediction" target="_blank">View more</a>
+                    <h3>TensorFlow Object Detection</h3>
+                    <p>Detect the hands of any person and their distance from camera. Alert sound if crosses virtual lines</p>
+                    <p><strong>Tags:</strong> <br/>Deep Learning,OpenCV, Python, Tensorflow 1.14</p>
+                    <a href="https://github.com/parulsharma247/hand_detection_with_openCV" target="_blank">View more</a>
                 </figcaption>
             </figure>
         </div>
 
 
-        <div class=" col-md-6 col-sm-12 col-xs-12">
+        <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <figure class="effect">
                 <img src="images/projects/heart_disease_prediction.png" alt="Heart Disease" style="height:300px;"/>
                 <figcaption>
-                    <h3>Heart Disease Prediction</h3>
-                    <p>Predict the heart disease probability of a person based on various features.</p>
+                    <h3>Cardiac Disease Prediction</h3>
+                    <p>Predict the cardiac disease probability of a person based on various parameters.</p>
                     <p><strong>Tags:</strong> <br/>Machine Learning,Classification Algo, Flask, HTML</p>
                     <a href="https://github.com/parulsharma247/ML_cardio_disease_prediction" target="_blank">View more</a>                  
                 </figcaption>
@@ -876,67 +884,57 @@
 </div>
 
 
-<div class="background-gray">
+<div class="background-gray" style="height: 500px;">
     <div id="contact" class="container">
         <h2>Contact</h2>
-
-        <hr>
-
-        <div>
-            <a href="mailto:sparul247@gmail.com" class="btn btn-primary" target="_blank" style="margin-left: 36%;"><h4>CONTACT ME</h4></a>
-          
-            <div class="row">
-                <div class="col-md-6">
-
-                    <ul class="no-bullets">
-                        <li>
-                            <a class="footer-link" href="https://www.linkedin.com/in/parulsharma247/" style="visibility: hidden">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6">
-                    <ul class="no-bullets">
-                        <!--<li>
-                            <a href="javascript:void(0);">
-                                <span class="icon icon-skype"></span>
-                                pascalvgemert               </a>
-                        </li>-->
-                        <li>
-                            <a style="visibility:hidden" ;class="footer-link" href="https://twitter.com/parulsharma247">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-
-                
-
-            </div>
-
-
-        </div>
-        <p class="copyright text-center" style="font-size: 14px;"><em>© 2020 Parul Sharma @ Personal Resume.</em></p>
-
     </div>
 
-    <hr>
+        <hr>
+         <div class="text-center project-referal">
+             <a href="mailto:sparul247@gmail.com" class="btn btn-primary" target="_blank"><h4>CONTACT ME</h4></a> 
+             <br><br><br><br><br><br><br><br>
+               <p class="copyright text-center" style="font-size: 14px; color: #ffffff"><em>© 2020 Parul Sharma @ Personal Resume.</em></p>
+        </div>      
+</div>
+<hr>
+
+      
+
+
+<!--
+    
+        <div class="row">
+            <div class="col-md-6">
+
+                <ul class="no-bullets">
+                    <li>
+                        <a class="footer-link" href="https://www.linkedin.com/in/parulsharma247/" style="visibility: hidden">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="no-bullets">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon icon-skype"></span>
+                            pascalvgemert               </a>
+                    </li>
+                    <li>
+                        <a style="visibility:hidden" ;class="footer-link" href="https://twitter.com/parulsharma247">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+    -->
+</visibility:>
+</p>
+</div>
+            </div>
+        </div>
+    </div>
 </div>
 
-    <div class="modal fade" id="upgrade-dialog" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Your browser is out of date</h4>
-                </div>
-                <div class="modal-body">
-                    <p>To get the best possible experience using our site we recommend that you upgrade to a modern web
-                        browser. To download a newer web browser click on the Upgrade button.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="http://browsehappy.com/" target="_blank" class="btn btn-primary">Upgrade</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
