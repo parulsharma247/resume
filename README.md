@@ -1,2 +1,2 @@
-# resume_1_1
+# Resume and required files for porfolio_website
 Resume
